@@ -5,22 +5,25 @@
         <link rel="stylesheet" href="styleadvanced.css">
     </head>
     <body>
+        <!--link in the top right corner back to google search-->
         <div class="back">
             <a href="index.html">Back to Google Search</a>
         </div>
+        <!--logo in the top left-->
         <div class="logocont">
             <image src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google logo" class="logo">
         </div>
         <div class="title">
             Advanced Search
         </div>
+        <!--container for the input boxes-->
         <div class="container">
             <div class="header">
                 Find pages with...
             </div>
             <form action="https://www.google.com/search" method="get">
                 <div class="searchfld">
-                    <!-- Row 1: All words -->
+                    <!-- Row for: all these words -->
                     <div class="row">
                         <label for="all-words">All these words: </label>
                         <input type="text" id="all-words" name="as_q" class="input-field">
@@ -28,7 +31,7 @@
                     <div class="clarification">
                         Type the important words: <span class="monospace">cat</span>
                     </div>
-                    <!-- Row 2: Exact phrase -->
+                    <!-- Row for: exact phrase -->
                     <div class="row">
                         <label for="exact-phrase">Exact word or phrase:</label>
                         <input type="text" id="exact-phrase" name="as_epq" class="input-field">
@@ -36,7 +39,7 @@
                     <div class="clarification">
                         Put exact words in quotes: <span class="monospace">"cute cat"</span>
                     </div>
-                    <!-- Row 3: Any of these words -->
+                    <!-- Row for: any of these words -->
                     <div class="row">
                         <label for="any-words">Any of these words:</label>
                         <input type="text" id="any-words" name="as_oq" class="input-field">
@@ -44,7 +47,7 @@
                     <div class="clarification">
                         Type OR between all the words you want: <span class="monospace">miniature OR standard</span>
                     </div>
-                    <!-- Row 4: None of these words -->
+                    <!-- Row for: none of these words -->
                     <div class="row">
                         <label for="none-words">None of these words:</label>
                         <input type="text" id="none-words" name="as_eq" class="input-field">

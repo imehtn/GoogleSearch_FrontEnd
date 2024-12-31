@@ -40,14 +40,14 @@ body
     align-items: center;
     align-items:center;
   }
-
+  //searchbar itself
   .search-input 
   {
-    width: 600px; // Adjusted to look like Google's search bar
+    width: 600px; 
     padding: $input-padding;
     font-size: $font-size;
     border: 1px solid $input-border-color;
-    border-radius: 24px; // Rounded corners
+    border-radius: 24px;
     outline: none;
     margin-bottom: 20px;
     transition: border 0.3s ease;
@@ -58,7 +58,7 @@ body
     }
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
-
+  //button
   .searchbtn
     {
       padding: $button-padding;
@@ -81,7 +81,7 @@ body
         background-color: $active-color;
       }
     }
-
+    //logo
   .logo
   {
     max-width: 300px;

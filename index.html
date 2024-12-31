@@ -6,20 +6,25 @@
     </head>
     <body>
         <div class="searchbar">
+            <!--logo-->
             <image src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google logo" class="logo">
+            <!--searchbar content
+                inputs content and sends to google search URL -->
             <form id="searchForm" action="https://www.google.com/search" method="GET">
                 <input id="searchInput" type="text" name="q" placeholder="Search Google..." required class="search-input">
+                <!-- search and I'm Feeling Lucky buttons-->
                 <div class="buttons">
                     <div>
-                    <input type="submit" value="Google Search" class ="searchbtn">
+                        <input type="submit" value="Google Search" class ="searchbtn">
                     </div>
                     <div>
-                    <input type="button" id="luckyButton" class="luckybtn" value="I'm Feeling Lucky">
-                    <input type="hidden" name="btnI" value="1">
+                        <input type="button" id="luckyButton" class="luckybtn" value="I'm Feeling Lucky">
+                        <input type="hidden" name="btnI" value="1">
                     </div>
                 </div>
             </form>
         </div>
+        <!--links at the upper right corner-->
         <div class="container">
             <a href="advanced.html">Advanced Search</a>
             <a href="image.html">Image Search</a>

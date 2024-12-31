@@ -34,7 +34,7 @@ body
   color: rgb(167, 23, 23);
 }
 
-/* Main Container */
+// container with all the input boxes
 .container {
   max-width: 900px;
   margin-top: 10px;  
@@ -50,7 +50,7 @@ body
     margin-bottom: 25px;
   }
 
-  /* Form and Search Fields */
+  //main search field 
   .searchfld {
     .row {
       display: flex; /* Use flexbox to align label and input horizontally */
@@ -73,7 +73,7 @@ body
     }
   }
 
-  /* Submit Button */
+  // Submit Button 
   .search-btn {
     background-color: #1a73e8;
     color: white;
@@ -91,7 +91,7 @@ body
     }
   }
 }
-
+//input clarifications
 .clarification
 {
   margin-right: 15px;
@@ -100,7 +100,7 @@ body
   color: #1558b0;
 }
 
-// Container with the links in the top-right corner
+// for the links in the top-right corner
 .back 
 {
   position: absolute;
@@ -120,7 +120,7 @@ body
     }
   }
 }
-
+//logo in the top right corner 
 .logo
 {
   position: absolute;

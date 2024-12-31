@@ -39,7 +39,7 @@ body
     flex-direction: column;
     align-items: center;
   }
-
+  //search bar itself
   .search-input 
   {
     width: 600px; // Adjusted to look like Google's search bar
@@ -57,7 +57,7 @@ body
       border-color: $input-focus-border-color;
     }
   }
-
+  //buttons
   .buttons 
   {
     display: flex;
@@ -88,13 +88,8 @@ body
         background-color: $active-color;
       }
     }
-    
-    .luckybtn,.searchbtn 
-    {
-      background-color: $button-bg;
-    }
 }
-
+  //logo specs
   .logo
   {
     max-width: 300px;
