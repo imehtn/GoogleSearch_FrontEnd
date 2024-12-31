@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.searchbar form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+}
+.searchbar .search-input {
+  width: 600px;
+  padding: 14px;
+  font-size: 16px;
+  border: 1px solid #dcdcdc;
+  border-radius: 24px;
+  outline: none;
+  margin-bottom: 20px;
+  transition: border 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.searchbar .search-input:focus {
+  border-color: #4285f4;
+}
+.searchbar .searchbtn {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: 1px solid #dcdcdc;
+  border-radius: 0;
+  background-color: #f4f4f4;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100px;
+  height: 40px;
+}
+.searchbar .searchbtn:hover {
+  background-color: rgb(195, 191, 191);
+}
+.searchbar .searchbtn:active {
+  background-color: #e8e8e8;
+}
+.searchbar .logo {
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+.container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 25px;
+}
+.container a {
+  color: blue;
+  text-decoration: none;
+  font-size: 17px;
+}
+.container a:hover {
+  color: red;
+}
+
+/*# sourceMappingURL=styleimage.css.map */

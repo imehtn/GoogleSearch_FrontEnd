@@ -1,0 +1,125 @@
+// Variables for colors and sizes
+$primary-color: #4285f4;
+$hover-color: #f1f1f1;
+$active-color: #e8e8e8;
+$button-bg: #f4f4f4;
+$input-border-color: #dcdcdc;
+$input-focus-border-color: $primary-color;
+$input-padding: 14px;
+$button-padding: 10px 20px;
+$font-size: 16px;
+$font-family: Arial, sans-serif;
+$hover-bg-color: rgb(195, 191, 191); //color for hover
+
+// Global Reset (removes margin, padding, box-sizing issues)
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Body Styling (to center content)
+body 
+{
+  font-family: $font-family;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+// Searchbar Styling
+.searchbar 
+{
+  form 
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-input 
+  {
+    width: 600px; // Adjusted to look like Google's search bar
+    padding: $input-padding;
+    font-size: $font-size;
+    border: 1px solid $input-border-color;
+    border-radius: 24px; // Rounded corners
+    outline: none;
+    margin-bottom: 20px;
+    transition: border 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+    &:focus 
+    {
+      border-color: $input-focus-border-color;
+    }
+  }
+
+  .buttons 
+  {
+    display: flex;
+    gap: 20px;
+    justify-content: center;  // Ensure buttons are centered
+    align-items: center;  // Vertically align buttons within their container
+    
+    .searchbtn,
+    .luckybtn 
+    {
+      padding: $button-padding;
+      font-size: 14px;
+      border: 1px solid $input-border-color;
+      border-radius: 0;
+      background-color: $button-bg;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      width: 150px;
+      height: 40px;
+      
+      &:hover 
+      {
+        background-color: $hover-bg-color;
+      }
+
+      &:active 
+      {
+        background-color: $active-color;
+      }
+    }
+    
+    .luckybtn,.searchbtn 
+    {
+      background-color: $button-bg;
+    }
+}
+
+  .logo
+  {
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+}
+
+// Container with the links in the top-right corner
+.container 
+{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 25px;
+  
+  a 
+  {
+    color: blue;
+    text-decoration: none;
+    font-size: 17px;
+    
+    &:hover 
+    {
+      color: red;
+    }
+  }
+}

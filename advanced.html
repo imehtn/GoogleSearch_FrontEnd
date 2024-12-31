@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced Search</title>
+        <link rel="stylesheet" href="styleadvanced.css">
+    </head>
+    <body>
+        <div class="back">
+            <a href="index.html">Back to Google Search</a>
+        </div>
+        <div class="logocont">
+            <image src="google.png" alt="Google logo" class="logo">
+        </div>
+        <div class="title">
+            Advanced Search
+        </div>
+        <div class="container">
+            <div class="header">
+                Find pages with...
+            </div>
+            <form action="https://www.google.com/search" method="get">
+                <div class="searchfld">
+                    <!-- Row 1: All words -->
+                    <div class="row">
+                        <label for="all-words">All these words: </label>
+                        <input type="text" id="all-words" name="as_q" class="input-field">
+                    </div>
+                    <div class="clarification">
+                        Type the important words: <span class="monospace">cat</span>
+                    </div>
+                    <!-- Row 2: Exact phrase -->
+                    <div class="row">
+                        <label for="exact-phrase">Exact word or phrase:</label>
+                        <input type="text" id="exact-phrase" name="as_epq" class="input-field">
+                    </div>
+                    <div class="clarification">
+                        Put exact words in quotes: <span class="monospace">"cute cat"</span>
+                    </div>
+                    <!-- Row 3: Any of these words -->
+                    <div class="row">
+                        <label for="any-words">Any of these words:</label>
+                        <input type="text" id="any-words" name="as_oq" class="input-field">
+                    </div>
+                    <div class="clarification">
+                        Type OR between all the words you want: <span class="monospace">miniature OR standard</span>
+                    </div>
+                    <!-- Row 4: None of these words -->
+                    <div class="row">
+                        <label for="none-words">None of these words:</label>
+                        <input type="text" id="none-words" name="as_eq" class="input-field">
+                    </div>
+                    <div class="clarification">
+                        Put a minus sign before words that you don't want: <span class="monospace">-dog, -"Jerry"</span>
+                    </div>
+                    <!-- Search Button -->
+                    <div class="row">
+                        <button type="submit" class="search-btn">Advanced Search</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
